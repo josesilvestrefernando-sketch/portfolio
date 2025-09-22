@@ -1,46 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style2.css">  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Developer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .project {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-left: 4px solid #3498db;
+      background: #f4faff;
+    }
+    .skills span {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
 <body>
+  <header>
+    <h1>Jose Silvestre C. Fernando</h1>
+    <p>Aspiring Java Developer | Passionate in Java Coding</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <header class="header">
-        <h1>Jose Silvestre C. Fernando</h1>
-        <h2>Aspiring Java Developer | Passionate in Java Coding</h2>
-        <p class="subtitle">My passion lies in problem-solving through coding, and I love finding creative solutions with Java.</p>
-    </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+I am passionate about coding and learn the Processing JavaScript from Khan Academy. But now I'm transitioning from Processing.js to Processing Java IDE and expand my skills to Procesing Android with AIDE app.
+    </p>
+  </section>
 
-    <main class="container">
-        <section class="about">
-            <h2>About Me</h2>
-            <p>I am passionate about coding and learn the Processing JavaScript from Khan Academy. But now I'm transitioning from Processing.js to Processing Java IDE and expand my skills to Procesing Android with AIDE app.</p>
-            <ul>
-                <li> "Experienced Java Coding with Processing API" </li> 
-                <li> "Using AIDE in android phone for coding in Java with Processing Library" </li>
-            </ul>
-        </section>
+  <section id="projects">
+    <h2>Projects</h2>
 
-        <section class="projects">
-            <h2>Projects</h2>
-            <!-- This section will hold your project descriptions -->
-            <div class="project">
-                <h3>Setting The AIDE With Processing Jar</h3>
-                <p>I show how to setup the AIDE with Processing Jar. This is from the sample project of Processing Android but they are using Anroid Studio so I'm just trying to show it to other people like me who are using AIDE instead of Android Studio.</p>
-                <a href="https://github.com/josesilvestrefernando-sketch/processing-aide" target="_blank">View Project</a>  
-            </div>
+    <div class="project">
+      <h3>Setting The AIDE With Processing Jar</h3>
+      <p>I show how to setup the AIDE with Processing Jar. This is from the sample project of Processing Android but they are using Anroid Studio so I'm just trying to show it to other people like me who are using AIDE instead of Android Studio.</p>
+      <p><a href="https://github.com/josesilvestrefernando-sketch/processing-aide" target="_blank">View on GitHub</a></p>
+    </div>
 
-            <!-- Add more projects here -->
-        </section>
 
-    </main>
+  </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Jose Silvestre C. Fernando. All rights reserved.</p>
-    </footer>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Java Coding</span>
+      <span>Coding Using Processing IDE</span>
+      <span>Coding Using AIDE</span>
+      <span>Coding Using Processing Android</span>
+ 
+    </div>
+  </section>
 
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: josesilvestrefernando@gmail.com</p>
+    </section>
+
+  <footer>
+    <p>© 2025 Jose Silvestre C. Fernando. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
