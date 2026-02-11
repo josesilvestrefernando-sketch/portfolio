@@ -1,162 +1,160 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Self‑Taught Java Programmer — Portfolio</title>
-  <meta name="description" content="Portfolio of a self-taught Java programmer showcasing projects, tutorials and social links (TikTok).">
-  <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
-      --maxw:1100px; --radius:14px; --pad:20px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071026 0%, #071730 60%);color:#e6eef6}
-    a{color:var(--accent); text-decoration:none}
-    .wrap{max-width:var(--maxw);margin:36px auto;padding:16px}header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:center;gap:12px}
-.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#0ea5a2,#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052025}
-nav a{margin-left:14px;color:var(--muted);font-weight:600}
+    <meta charset="UTF-8">
+    <title>Jose Silvestre Fernando | Java Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
 
-.hero{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-top:28px;align-items:start}
-.card{background:var(--card);border-radius:var(--radius);padding:var(--pad);box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-.intro h1{margin:0 0 8px 0;font-size:28px;letter-spacing:-0.5px}
-.intro p{margin:0;color:var(--muted)}
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
 
-.skills{display:flex;flex-wrap:wrap;margin-top:14px;gap:8px}
-.tag{background:var(--glass);padding:8px 10px;border-radius:10px;font-weight:600;color:var(--muted);font-size:13px}
+        h1, h2 {
+            margin-bottom: 15px;
+        }
 
-.rightCard{position:sticky;top:24px}
-.socials a{display:inline-block;margin-right:10px;padding:8px 12px;background:rgba(255,255,255,0.02);border-radius:10px;color:var(--muted);font-weight:700}
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
 
-.section{margin-top:20px}
-.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.project{display:flex;gap:12px;align-items:flex-start}
-.proj-thumb{width:78px;height:78px;border-radius:10px;background:linear-gradient(180deg,#081226,#03101a);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
-.proj-info h3{margin:0;font-size:16px}
-.proj-info p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+        ul {
+            padding-left: 20px;
+        }
 
-.tiktok-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.video-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:10px;border-radius:12px;display:flex;flex-direction:column;align-items:center}
-.thumb{width:100%;height:140px;border-radius:10px;background:#06202b;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
-.play{background:rgba(255,255,255,0.06);padding:10px;border-radius:50%}
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
 
-footer{margin:40px 0 80px 0;text-align:center;color:var(--muted)}
+        a:hover {
+            text-decoration: underline;
+        }
 
-/* responsive */
-@media (max-width:980px){ .hero{grid-template-columns:1fr} .projects{grid-template-columns:1fr} .tiktok-grid{grid-template-columns:repeat(2,1fr)} }
-@media (max-width:560px){ .tiktok-grid{grid-template-columns:1fr} header{flex-direction:column;align-items:flex-start} nav a{margin-left:8px}} 
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e5e7eb;
+            margin-top: 40px;
+        }
 
-/* small utility */
-.muted{color:var(--muted)}
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#06b6d4,#0ea5a2);color:#042024;font-weight:800}
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2563eb;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
 
-  </style>
+        .button:hover {
+            background-color: #1e40af;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        
-        <div>
-          <div style="font-weight:800">Jose Silvestre C. Fernando— Self‑Taught Java Coder</div>
-          <div class="muted" style="font-size:13px">Java | Android | Algorithms | Tutorials</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#tutorials">Tutorials</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header><div class="hero">
-  <div class="card intro">
-    <h1>Hello — I teach Java with short, practical tutorials</h1>
-    <p class="muted">I’m a self-taught Java programmer. I build small apps and share step-by-step short tutorials to help beginners learn coding quickly.</p>
 
-    <div class="skills">
-      <span class="tag">Java</span>
-			<span class="tag">Processing Java</span>
-      <span class="tag">Android (AIDE)</span>
-    </div>
+<header>
+    <h1>Jose Silvestre Fernando</h1>
+    <p>Freelance Java Developer | Self-Taught Programmer</p>
+</header>
 
-    <div class="section" id="projects">
-      <h2 style="margin:0 0 12px 0">Selected Projects</h2>
-      <div class="projects">
-        <div class="project card">
-         
-          <div class="proj-info">
-            <h3>Setting The AIDE With Processing Jar</h3>
-            <p class="muted">I show how to setup the AIDE with Processing Jar. This is from the sample project of Processing Android but they are using Anroid Studio so I'm just trying to show it to other people like me who are using AIDE instead of Android Studio.</p>
-						<p><a href="https://github.com/josesilvestrefernando-sketch/processing-aide" target="_blank">View on GitHub</a></p>
-
-          </div>
-        </div>
-
-       
-      </div>
-    </div>
-
-    <div class="section" id="tutorials">
-      <h2 style="margin:18px 0 12px 0">Short Java Tutorials (TikTok)</h2>
-      <p class="muted">I publish short, focused Java lessons and mini-project walkthroughs on TikTok. Click a video below to view on TikTok.</p>
-
-      <!-- Replace the thumbnails below with real screenshots or TikTok embeds if you have video URLs. -->
-      <div class="tiktok-grid" style="margin-top:12px">
-        <a class="video-card" href="https://vt.tiktok.com/ZSU6nemwW/" target="_blank" rel="noopener noreferrer">
-          <div class="thumb">
-            <div style="text-align:center">
-              <div class="play">▶</div>
-              <div style="margin-top:10px;font-weight:700">@josesilvestretiktok</div>
-            </div>
-          </div>
-          <div style="margin-top:10px;font-weight:700">Processing AIDE</div>
-          <div class="muted" style="font-size:13px;margin-top:6px">Setting the processing jar in AIDE.</div>
-        </a>
-
-       
-      </div>
-
-      <p style="margin-top:12px" class="muted">Or visit my profile to see all tutorials: <a href="https://www.tiktok.com/@josesilvestretiktok" target="_blank" rel="noopener noreferrer">tiktok.com/@josesilvestretiktok
-</a></p>
-
-    </div>
-  </div>
-
-  <aside class="rightCard">
+<section>
+    <h2>About Me</h2>
     <div class="card">
-      <h3 style="margin:0 0 8px 0">Connect</h3>
-      <div class="muted" style="font-size:13px;margin-bottom:12px">Open to freelance projects and tutoring sessions.</div>
-
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <a class="btn" href="mailto:josesilvestrefernando@gmail.com">Email me</a>
-        <a class="btn" href="https://github.com/josesilvestrefernando-sketch/" style="background:linear-gradient(90deg,#334155,#0ea5a2);">GitHub</a>
-        <a class="btn" href="https://www.tiktok.com/@josesilvestretiktok">TikTok Tutorials</a>
-      </div>
-
-  
+        <p>
+            I am a self-taught Java developer focused on building clean, logical,
+            and structured backend systems. I specialize in core Java, 
+            object-oriented programming, and algorithm-based applications.
+        </p>
+        <p>
+            I enjoy solving logical problems and designing systems that handle 
+            tournament structures, rankings, and backend processes.
+        </p>
     </div>
+</section>
 
-    <div class="card" style="margin-top:14px">
-      <h4 style="margin:0 0 10px 0">Quick Bio</h4>
-      <p class="muted" style="margin:0;font-size:14px">Self-taught Java developer focusing on small apps, teaching, and helping beginners. Occasionally posts walkthroughs on TikTok and writes short tutorials.</p>
+<section>
+    <h2>Skills</h2>
+    <div class="card">
+        <ul>
+            <li>Java</li>
+           
+        </ul>
     </div>
-  </aside>
-</div>
+</section>
 
-<section id="contact">
+<section>
+    <h2>Featured Project</h2>
+    <div class="card">
+        <h3>Round Robin Tournament API (Java)</h3>
+        <p>
+            A Java-based backend system that simulates a round robin tournament
+            structure.
+        </p>
+
+        <strong>Features:</strong>
+        <ul>
+            <li>Add players to the tournament</li>
+            <li>Generate and track player matches</li>
+            <li>Calculate and display player rankings</li>
+            <li>Determine the next opponent based on Winner vs Loser rules</li>
+            <li>View player match history</li>
+        </ul>
+
+        <p>
+           This project is a Java-based API that implements a Round Robin Tournament calculation system with a custom rule set:
+
+Players are matched based on Winner vs Loser logic
+
+The tournament progresses until the remaining contestants advance to Winner vs Winner matches
+
+Rankings are updated dynamically based on match results
+
+This project is designed for learning purposes, algorithm practice, and as a portfolio-ready backend logic project.
+        </p>
+
+        <!-- REPLACE THIS LINK WITH YOUR ACTUAL GITHUB REPOSITORY -->
+        <a class="button" href="https://github.com/josesilvestrefernando-sketch/RoundRobinTournament" target="_blank">
+            View Project on GitHub
+        </a>
+    </div>
+</section>
+
+<section>
     <h2>Contact</h2>
-    <p>Email: josesilvestrefernando@gmail.com</p>
-    </section>
+    <div class="card">
+        <p>Email: josesilvestrefernando@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/josesilvestrefernando-sketch" target="_blank">
+            https://github.com/josesilvestrefernando-sketch
+        </a></p>
+    </div>
+</section>
 
-  <footer>
-    <p>© 2025 Jose Silvestre C. Fernando. All rights reserved.</p>
-  </footer>
+<footer>
+    <p>© 2026 Jose Silvestre Fernando | Java Developer</p>
+</footer>
 
-
-  </div>
 </body>
 </html>
